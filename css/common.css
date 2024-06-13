@@ -238,7 +238,7 @@ input::-webkit-inner-spin-button {
 .widget {
   background-color: var(--color-ffffff);
   border-radius: 8px;
-  padding: 100px 60px;
+  padding: 100px 50px;
   width: 345px;
   height: 280px;
 }
@@ -254,7 +254,7 @@ input::-webkit-inner-spin-button {
   letter-spacing: 0.04em;
   color: var(--color-2e2f42);
 
-  text-align: justify;
+  text-align: center;
 }
 
 .change-color {
