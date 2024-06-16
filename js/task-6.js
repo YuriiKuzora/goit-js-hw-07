@@ -28,15 +28,13 @@ function createBoxes(amount) {
   boxesBlock.innerHTML = '';
 
   let sizeBlock = 30;
+  let htmlString = '';
   for (let i = 0; i < amount; i++) {
-    const square = document.createElement('div');
-
-    square.style.width = `${sizeBlock}px`;
-    square.style.height = `${sizeBlock}px`;
-    square.style.backgroundColor = getRandomHexColor();
-    boxesBlock.appendChild(square);
+    const color = getRandomHexColor();
+    htmlString += `<div style="width: ${sizeBlock}px; height: ${sizeBlock}px; background-color: ${color};"></div>`;
     sizeBlock += 10;
   }
+  boxesBlock.innerHTML = htmlString;
 }
 
 function destroyBoxes() {
